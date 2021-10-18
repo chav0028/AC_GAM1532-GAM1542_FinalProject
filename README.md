@@ -6,7 +6,7 @@ For this project we had to design a game engine, and its graphics (3D rendering,
 This project was made using:
 - C++ - Game and Engine logic
 - GLSL (OpenGL ES 2.0) - Rendering
-- BOx2D - Collisions
+- Box2D - Collisions
 - SDL - Audio playback
 
 This project included a number of different features including:

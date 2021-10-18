@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CommonHeader.h" />
+    <ClInclude Include="Source\Core\Sound\AudioCue.h" />
+    <ClInclude Include="Source\Core\Sound\Sound.h" />
+    <ClInclude Include="Source\Core\Sound\SoundSystem.h" />
+    <ClInclude Include="Source\Core\Utility\FBODefinition.h" />
+    <ClInclude Include="Source\Core\Utility\QuickWatch.h" />
+    <ClInclude Include="Source\Core\Utility\Tween.h" />
+    <ClInclude Include="Source\Core\Utility\TweenFuncs.h" />
+    <ClInclude Include="Source\Game\Base\CameraObject.h" />
+    <ClInclude Include="Source\Game\Base\LightObject.h" />
+    <ClInclude Include="Source\Game\Base\Menu\Button.h" />
+    <ClInclude Include="Source\Game\Base\Particles\Particle.h" />
+    <ClInclude Include="Source\Game\Base\Particles\ParticleEmitter.h" />
+    <ClInclude Include="Source\Game\Base\Particles\ParticleRenderer.h" />
+    <ClInclude Include="Source\Game\Base\Particles\ParticleRenderer3D.h" />
+    <ClInclude Include="Source\Game\Base\Particles\ParticleSystem.h" />
+    <ClInclude Include="Source\Game\Base\Pool.h" />
+    <ClInclude Include="Source\Game\Base\SceneManager.h" />
+    <ClInclude Include="Source\Game\Box2D\Box2DContactListener.h" />
+    <ClInclude Include="Source\Game\Box2D\Box2DDebugDraw.h" />
+    <ClInclude Include="Source\Game\Box2D\Box2DJointInfo.h" />
+    <ClInclude Include="Source\Game\Box2D\Box2DRaycast.h" />
+    <ClInclude Include="Source\Game\Box2D\Box2DWorld.h" />
+    <ClInclude Include="Source\Core\GL\glext.h" />
+    <ClInclude Include="Source\Core\GL\GLExtensions.h" />
+    <ClInclude Include="Source\Core\GL\wglext.h" />
+    <ClInclude Include="Source\Core\InputEvent.h" />
+    <ClInclude Include="Source\Core\Math\MyMatrix.h" />
+    <ClInclude Include="Source\Core\Math\Vector.h" />
+    <ClInclude Include="Source\Core\Utility\Helpers.h" />
+    <ClInclude Include="Source\Core\Utility\ShaderProgram.h" />
+    <ClInclude Include="Source\Core\Utility\Utility.h" />
+    <ClInclude Include="Source\Game\Base\Game.h" />
+    <ClInclude Include="Source\Game\Base\GameObject.h" />
+    <ClInclude Include="Source\Game\Base\Scene.h" />
+    <ClInclude Include="Source\Game\GameObjects\Cannon.h" />
+    <ClInclude Include="Source\Game\GameObjects\CannonProjectile.h" />
+    <ClInclude Include="Source\Game\GameObjects\ElevatorObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\EndLevelSensor.h" />
+    <ClInclude Include="Source\Game\GameObjects\EnemyObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGEndLevelSensor.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGHealthPickUp.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGInvincibilityPickUp.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGInvisibleEnemy.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPlayer.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPlayerWheel.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPrismaticEnemy.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGRevolutingEnemy.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGSpeedPickUp.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGSpikes.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\BackButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\ControlsButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\MainMenuButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\PlayGameButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\QuitButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\ResetButton.h" />
+    <ClInclude Include="Source\Game\GameObjects\FloatingMineObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\FloatingObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\FloatingPlayerObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\HealthPowerUp.h" />
+    <ClInclude Include="Source\Game\GameObjects\LivingObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\MovingWall.h" />
+    <ClInclude Include="Source\Game\GameObjects\PlaneRipplesObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\PlayerObject.h" />
+    <ClInclude Include="Source\Game\GameObjects\PrismaticEnemy.h" />
+    <ClInclude Include="Source\Game\GameObjects\Projectile.h" />
+    <ClInclude Include="Source\Game\GameObjects\RevolutingEnemy.h" />
+    <ClInclude Include="Source\Game\GameObjects\ScoreSensor.h" />
+    <ClInclude Include="Source\Game\Mesh\Mesh.h" />
+    <ClInclude Include="Source\Game\Mesh\NumberFontSystem.h" />
+    <ClInclude Include="Source\Game\Mesh\VertexFormat.h" />
+    <ClInclude Include="Source\Game\Scenes\CannonScene.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\ControlsScene.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\EndGame.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\FinalGameScene.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\MainMenu.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\PauseScene.h" />
+    <ClInclude Include="Source\Game\Scenes\FinalProject\SplashScreen.h" />
+    <ClInclude Include="Source\Game\Scenes\LightScene.h" />
+    <ClInclude Include="Source\Game\Scenes\LoadingSampleScene.h" />
+    <ClInclude Include="Source\Game\Scenes\ThrustersGame.h" />
+    <ClInclude Include="Source\Game\Scenes\WaterScene.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Box2D.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Draw.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2GrowableStack.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Math.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Timer.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Rope\b2Rope.h" />
+    <ClInclude Include="Source\Libraries\cJSON\cJSON.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.hpp" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmodiphone.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_codec.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_dsp.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_errors.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_memoryinfo.h" />
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_output.h" />
+    <ClInclude Include="Source\Libraries\lodepng\lodepng.h" />
+    <ClInclude Include="Source\Libraries\SDL2_mixer-2.0.1\include\SDL_mixer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Sound\AudioCue.cpp" />
+    <ClCompile Include="Source\Core\Sound\Sound.cpp" />
+    <ClCompile Include="Source\Core\Sound\SoundSystem.cpp" />
+    <ClCompile Include="Source\Core\Utility\FBODefinition.cpp" />
+    <ClCompile Include="Source\Core\Utility\QuickWatch.cpp" />
+    <ClCompile Include="Source\Game\Base\CameraObject.cpp" />
+    <ClCompile Include="Source\Game\Base\LightObject.cpp" />
+    <ClCompile Include="Source\Game\Base\Menu\Button.cpp" />
+    <ClCompile Include="Source\Game\Base\Particles\Particle.cpp" />
+    <ClCompile Include="Source\Game\Base\Particles\ParticleEmitter.cpp" />
+    <ClCompile Include="Source\Game\Base\Particles\ParticleRenderer.cpp" />
+    <ClCompile Include="Source\Game\Base\Particles\ParticleRenderer3D.cpp" />
+    <ClCompile Include="Source\Game\Base\Particles\ParticleSystem.cpp" />
+    <ClCompile Include="Source\Game\Base\SceneManager.cpp" />
+    <ClCompile Include="Source\Game\Box2D\Box2DContactListener.cpp" />
+    <ClCompile Include="Source\Game\Box2D\Box2DDebugDraw.cpp" />
+    <ClCompile Include="Source\Game\Box2D\Box2DRaycast.cpp" />
+    <ClCompile Include="Source\Game\Box2D\Box2DWorld.cpp" />
+    <ClCompile Include="Source\Core\GL\GLExtensions.cpp" />
+    <ClCompile Include="Source\Core\Math\MyMatrix.cpp" />
+    <ClCompile Include="Source\Core\Math\Vector.cpp" />
+    <ClCompile Include="Source\Core\Utility\Helpers.cpp" />
+    <ClCompile Include="Source\Core\Utility\ShaderProgram.cpp" />
+    <ClCompile Include="Source\Core\WinMain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Game.cpp" />
+    <ClCompile Include="Source\Game\Base\GameObject.cpp" />
+    <ClCompile Include="Source\Game\Base\Scene.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\Cannon.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\CannonProjectile.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\ElevatorObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\EndLevelSensor.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\EnemyObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGEndLevelSensor.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGHealthPickUp.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGInvincibilityPickUp.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGInvisibleEnemy.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPlayer.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPlayerWheel.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPrismaticEnemy.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGRevolutingEnemy.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGSpeedPickUp.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGSpikes.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\BackButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\ControlsButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\MainMenuButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\PlayGameButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\QuitButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\ResetButton.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FloatingMineObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FloatingObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\FloatingPlayerObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\HealthPowerUp.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\LivingObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\MovingWall.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\PlaneRipplesObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\PlayerObject.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\PrismaticEnemy.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\Projectile.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\RevolutingEnemy.cpp" />
+    <ClCompile Include="Source\Game\GameObjects\ScoreSensor.cpp" />
+    <ClCompile Include="Source\Game\Mesh\Mesh.cpp" />
+    <ClCompile Include="Source\Game\Mesh\MeshShapes.cpp" />
+    <ClCompile Include="Source\Game\Mesh\NumberFontSystem.cpp" />
+    <ClCompile Include="Source\Game\Scenes\CannonScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\ControlsScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\EndGame.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\FinalGameScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\MainMenu.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\PauseScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\FinalProject\SplashScreen.cpp" />
+    <ClCompile Include="Source\Game\Scenes\LightScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\LoadingSampleScene.cpp" />
+    <ClCompile Include="Source\Game\Scenes\ThrustersGame.cpp" />
+    <ClCompile Include="Source\Game\Scenes\WaterScene.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Draw.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Timer.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Rope\b2Rope.cpp" />
+    <ClCompile Include="Source\Libraries\cJSON\cJSON.cpp" />
+    <ClCompile Include="Source\Libraries\lodepng\lodepng.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\Color.frag" />
+    <None Include="Data\Shaders\Color.vert" />
+    <None Include="Data\Shaders\Light.frag" />
+    <None Include="Data\Shaders\Light.vert" />
+    <None Include="Data\Shaders\LightColor.frag" />
+    <None Include="Data\Shaders\LightColor.vert" />
+    <None Include="Data\Shaders\LightSkyBoxReflective.frag" />
+    <None Include="Data\Shaders\LightSkyBoxReflective.vert" />
+    <None Include="Data\Shaders\MovingWater.frag" />
+    <None Include="Data\Shaders\MovingWater.vert" />
+    <None Include="Data\Shaders\PostEffectTextureBlackAndWhite.frag" />
+    <None Include="Data\Shaders\PostEffectTextureBlackAndWhite.vert" />
+    <None Include="Data\Shaders\PostEffectTextureHorizontalBlur.frag" />
+    <None Include="Data\Shaders\PostEffectTextureHorizontalBlur.vert" />
+    <None Include="Data\Shaders\PostEffectTextureNegative.frag" />
+    <None Include="Data\Shaders\PostEffectTextureNegative.vert" />
+    <None Include="Data\Shaders\PostEffectTextureSepia.frag" />
+    <None Include="Data\Shaders\PostEffectTextureSepia.vert" />
+    <None Include="Data\Shaders\PostEffectTextureVignette.frag" />
+    <None Include="Data\Shaders\PostEffectTextureVignette.vert" />
+    <None Include="Data\Shaders\PureSkyBoxReflective.frag" />
+    <None Include="Data\Shaders\PureSkyBoxReflective.vert" />
+    <None Include="Data\Shaders\SinTextureColor.frag" />
+    <None Include="Data\Shaders\SinTextureColor.vert" />
+    <None Include="Data\Shaders\SkyBox.frag" />
+    <None Include="Data\Shaders\SkyBox.vert" />
+    <None Include="Data\Shaders\Texture.frag" />
+    <None Include="Data\Shaders\Texture.vert" />
+    <None Include="Data\Shaders\TextureColor.frag" />
+    <None Include="Data\Shaders\TextureColor.vert" />
+    <None Include="Data\Shaders\Water.frag" />
+    <None Include="Data\Shaders\Water.vert" />
+    <None Include="Data\Shaders\WaterRipples.frag" />
+    <None Include="Data\Shaders\WaterRipples.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Libraries\fmod\lib\windows\fmodex_vc.lib" />
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2.lib" />
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2main.lib" />
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2test.lib" />
+    <Library Include="Source\Libraries\SDL2_mixer-2.0.1\lib\x86\SDL2_mixer.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E7143C9-185D-48FB-BE4D-FEE688D32B95}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GLProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\Int\$(Configuration)\</IntDir>
+    <LibraryPath>Source\Libraries\fmod\lib\windows;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\Int\$(Configuration)\</IntDir>
+    <LibraryPath>C:\Users\Alvaro\Desktop\Project\Source\Libraries\fmod\lib\windows;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source/Libraries/fmod/include;Source;Source/Libraries/Box2D/Box2d;Source/Libraries/SDL2-2.0.4/include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>CommonHeader.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;fmodex_vc.lib;SDL2.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Libraries\SDL2-2.0.4\lib\x86;$(SolutionDir)Source\Libraries\SDL2_mixer-2.0.1\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source/Libraries/fmod/include;Source;Source/Libraries/Box2D/Box2d;Source/Libraries/SDL2-2.0.4/include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>CommonHeader.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;fmodex_vc.lib;SDL2.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Libraries\SDL2-2.0.4\lib\x86;$(SolutionDir)Source\Libraries\SDL2_mixer-2.0.1\lib\x86;D:\TempD\Personal\AC_GAM1532-GAM1542_FinalProject\Source\Libraries\fmod\lib\windows;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

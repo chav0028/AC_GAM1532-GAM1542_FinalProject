@@ -1,0 +1,455 @@
+{
+	"GameObjects":	[{
+			"Name":	"Camera",
+			"Pos":	[0, 0, -15],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera"]
+		}, {
+			"Name":	"HUD Camera",
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera"]
+		}, {
+			"Name":	"WorldChain",
+			"Pos":	[0.221970, -3.457143, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.300000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[-5.059054, 6.038836, -5.042925, -0.017154, 4.966260, 0.025604, 4.962137, 6.035725]
+				}]
+		}, {
+			"Name":	"Floor",
+			"Pos":	[0.221970, -3.457143, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.300000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Wall-left",
+			"Pos":	[-4.778030, -0.457143, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.100000, 6, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Wall-right",
+			"Pos":	[5.221970, -0.457143, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.100000, 6, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Link1",
+			"Pos":	[-2.500000, 3.253895, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0.500000],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Link2",
+			"Pos":	[-2.500000, 2.400000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0.400000],
+					"AnchorB":	[0, -0.400000],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"Link1"
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Link3",
+			"Pos":	[-2.500000, 1.550000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0.400000],
+					"AnchorB":	[0, -0.400000],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"Link2"
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Link4",
+			"Pos":	[-2.500000, 0.700000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0.400000],
+					"AnchorB":	[0, -0.400000],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"Link3"
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Car Body",
+			"Pos":	[1.791546, -2.300000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 0.200000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[-1, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"Car Wheel Left"
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[1, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"Car Wheel Right"
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Car Wheel Left",
+			"Pos":	[0.830813, -2.300000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 0.400000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-Primitive",
+					"PrimitiveType":	"TriangleFan",
+					"PointSize":	1,
+					"MPType":	"2DCircle",
+					"PlaneSize":	[10, 10],
+					"PlaneVertCountx":	10,
+					"PlaneVertCounty":	10,
+					"PlaneUVStart":	[0, 0],
+					"PlaneUVRange":	[1, 1],
+					"SphereRadius":	1,
+					"Shader":	"Color",
+					"Color":	[255, 0, 255, 255]
+				}]
+		}, {
+			"Name":	"Car Wheel Right",
+			"Pos":	[2.807530, -2.300000, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 0.400000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-Primitive",
+					"PrimitiveType":	"TriangleFan",
+					"PointSize":	1,
+					"MPType":	"2DCircle",
+					"PlaneSize":	[10, 10],
+					"PlaneVertCountx":	10,
+					"PlaneVertCounty":	10,
+					"PlaneUVStart":	[0, 0],
+					"PlaneUVRange":	[1, 1],
+					"SphereRadius":	1,
+					"Shader":	"Color",
+					"Color":	[255, 0, 255, 255]
+				}]
+		}, {
+			"Name":	"Player",
+			"Pos":	[2.674942, 2.887760, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Spinner",
+			"Pos":	[1.566213, 0.690035, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	-6.200000,
+					"MotorMaxTorque":	5.800000,
+					"LimitEnabled":	1,
+					"LimitMin":	-60,
+					"LimitMax":	60,
+					"BreakForce":	0
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Another Spinner",
+			"Pos":	[-1.705130, -0.810316, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	-7.400000,
+					"MotorMaxTorque":	5.800000,
+					"LimitEnabled":	0,
+					"LimitMin":	-60,
+					"LimitMax":	60,
+					"BreakForce":	0
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Scale",
+			"Pos":	[0.253016, 3.115622, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Prismatic",
+					"Up":	[0, -1],
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	-20,
+					"MotorMaxForce":	30,
+					"LimitEnabled":	1,
+					"LimitMin":	0,
+					"LimitMax":	1
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[255, 0, 0, 255]
+				}]
+		}, {
+			"Name":	"Weight",
+			"Pos":	[0.299868, 5.127049, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Not Set"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Sprite",
+					"Tint":	[255, 255, 255, 255],
+					"Size":	[1, 1],
+					"Shader":	"Color",
+					"Color":	[0, 255, 0, 255]
+				}]
+		}, {
+			"Name":	"Edge",
+			"Pos":	[0, 1.958175, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Target"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Edge",
+					"Static":	0,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}]
+		}]
+}

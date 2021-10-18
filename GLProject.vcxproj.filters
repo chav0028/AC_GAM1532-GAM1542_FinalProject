@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{932aaeb3-e5e1-4753-a676-2862bafc1cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{eb47c53c-2a54-4c12-a4fb-9e9769304cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders">
+      <UniqueIdentifier>{27a1a792-900b-481f-a935-99ac27807878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{49bfca0d-c44b-406c-968d-59e4d008a6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game">
+      <UniqueIdentifier>{5a0aa52b-57aa-484c-9ba8-d87b5d7f8b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\GL">
+      <UniqueIdentifier>{49eab2c6-21d6-4c27-964a-2529b06ab43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Math">
+      <UniqueIdentifier>{cf0a3702-302a-4210-9c32-9c2b5d1ad800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Utility">
+      <UniqueIdentifier>{1319b681-32c8-4ef1-8ba6-74878cb0a39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries">
+      <UniqueIdentifier>{cc30c9aa-f5d4-4a07-9f72-7844317c469c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\lodepng">
+      <UniqueIdentifier>{032889b0-63e3-4061-900e-cce2507da25b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D">
+      <UniqueIdentifier>{d2c2e5c9-875a-41c8-83bc-b5184e29156c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Collision">
+      <UniqueIdentifier>{0db4f1e6-5a87-4fe6-9759-934cabc54141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Common">
+      <UniqueIdentifier>{94a2164e-ca58-4237-b87d-c6ceae99271e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Dynamics">
+      <UniqueIdentifier>{22644e71-cace-4c66-a6e7-9c1129e3b570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Rope">
+      <UniqueIdentifier>{06b0a817-8c03-492f-b527-ff578c9112b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Collision\Shapes">
+      <UniqueIdentifier>{b1d4b133-eaa3-48f2-b806-a3e35823ccbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Dynamics\Contacts">
+      <UniqueIdentifier>{40d200d9-4d62-4ace-a59b-226b3dca162d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\Box2D\Dynamics\Joints">
+      <UniqueIdentifier>{b82ec7cd-0242-42de-963d-12dc700a5ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\cJSON">
+      <UniqueIdentifier>{6fa75c35-8554-41da-ad6a-4c6f399800d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Mesh">
+      <UniqueIdentifier>{3a39e611-2bee-4b68-a7f3-aa24721b6a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Base">
+      <UniqueIdentifier>{0b000201-27ad-4fcc-a3f6-2208f08eaa91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Box2D">
+      <UniqueIdentifier>{996286d7-b293-474a-8cfb-ea7c4593f1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects">
+      <UniqueIdentifier>{a998a6dc-f165-4bde-99cd-ee5c3d1c431d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Libraries\fmod">
+      <UniqueIdentifier>{dcd513f2-291d-4cd7-89fe-1438c770ba56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Sound">
+      <UniqueIdentifier>{df1d828d-3147-4881-84d8-9a97d5e63f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\CannonScene">
+      <UniqueIdentifier>{e222f9f6-7cd6-4642-bae7-1ad1572b10dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\ThrusterGame">
+      <UniqueIdentifier>{4971ed95-5108-4111-b70c-bda093b9f3fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\WaterScene">
+      <UniqueIdentifier>{e097cc23-49ce-4c86-b88f-9654be2cadaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\Misc">
+      <UniqueIdentifier>{8247d369-9587-4582-8ca6-ecc25ed4fa4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Base\Particles">
+      <UniqueIdentifier>{af2aff7d-29c7-479b-bcfb-c7af6d6022c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Sound\FMOD">
+      <UniqueIdentifier>{c0528f26-6041-4db7-a189-e2ddf97dd538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Scenes">
+      <UniqueIdentifier>{791eb00a-83ce-46fb-8e73-c01919b417a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Base\Menu">
+      <UniqueIdentifier>{24fbfd16-94d7-474c-9790-e7d95490a00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame">
+      <UniqueIdentifier>{87184e19-5b9f-4609-ab66-02a194e2a8bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame\Menu">
+      <UniqueIdentifier>{61c63169-dd1e-4375-9d05-dad74ef7b717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame\Enemies">
+      <UniqueIdentifier>{f2065a3c-da45-4b81-9b17-604f46b87d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame\Player">
+      <UniqueIdentifier>{f1743422-2a28-4fde-abe1-3fb10e03c32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame\PickUps">
+      <UniqueIdentifier>{52d8effa-ae41-41f8-a5cc-6a6094048c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\GameObjects\FinalGame\Enviroment">
+      <UniqueIdentifier>{ea4ac36b-b925-4388-9ce6-00f6c858b195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\Basics">
+      <UniqueIdentifier>{56ec75f6-f984-4799-857c-1c98878a97e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\Misc">
+      <UniqueIdentifier>{f91fc56d-d9d0-4587-bf47-74e1a9a3a480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\PostEffect">
+      <UniqueIdentifier>{fe26734e-4c98-40cc-88a0-b2d0697ab0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\Light">
+      <UniqueIdentifier>{369c0f99-4bea-4ba0-bbb6-7712cba9c766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Game\Scenes\FinalGame">
+      <UniqueIdentifier>{3ab9341b-554f-470e-be41-0e3a709afabb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Libraries\lodepng\lodepng.h">
+      <Filter>Source\Libraries\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GL\glext.h">
+      <Filter>Source\Core\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GL\GLExtensions.h">
+      <Filter>Source\Core\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GL\wglext.h">
+      <Filter>Source\Core\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\MyMatrix.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Math\Vector.h">
+      <Filter>Source\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\Helpers.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\ShaderProgram.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\Utility.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Box2D.h">
+      <Filter>Source\Libraries\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2BroadPhase.h">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Collision.h">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Distance.h">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2DynamicTree.h">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.h">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.h">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.h">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.h">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.h">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2Shape.h">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2BlockAllocator.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Draw.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2GrowableStack.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Math.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Settings.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2StackAllocator.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Timer.h">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Body.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Fixture.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Island.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2TimeStep.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2World.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.h">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Rope\b2Rope.h">
+      <Filter>Source\Libraries\Box2D\Rope</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.h">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\InputEvent.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\cJSON\cJSON.h">
+      <Filter>Source\Libraries\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\Mesh.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\VertexFormat.h">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Game.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Scene.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\GameObject.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\Box2DWorld.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\Box2DDebugDraw.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\Box2DContactListener.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod.hpp">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_codec.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_dsp.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_errors.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_memoryinfo.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmod_output.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\fmod\include\fmodiphone.h">
+      <Filter>Source\Libraries\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Pool.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\Box2DRaycast.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\Cannon.h">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\CannonProjectile.h">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\HealthPowerUp.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\LivingObject.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PrismaticEnemy.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\Projectile.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\RevolutingEnemy.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\EndLevelSensor.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\ElevatorObject.h">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\EnemyObject.h">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PlaneRipplesObject.h">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Mesh\NumberFontSystem.h">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FloatingMineObject.h">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FloatingObject.h">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FloatingPlayerObject.h">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\PlayerObject.h">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\MovingWall.h">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\ScoreSensor.h">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Libraries\SDL2_mixer-2.0.1\include\SDL_mixer.h">
+      <Filter>Source\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Sound\Sound.h">
+      <Filter>Source\Core\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Sound\SoundSystem.h">
+      <Filter>Source\Core\Sound\FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Sound\AudioCue.h">
+      <Filter>Source\Core\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\CannonScene.h">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\LightScene.h">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\LoadingSampleScene.h">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\ThrustersGame.h">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\WaterScene.h">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\SceneManager.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Particles\Particle.h">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Particles\ParticleEmitter.h">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Particles\ParticleRenderer.h">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Particles\ParticleSystem.h">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Particles\ParticleRenderer3D.h">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\QuickWatch.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\LightObject.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\Tween.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\TweenFuncs.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Utility\FBODefinition.h">
+      <Filter>Source\Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\Menu\Button.h">
+      <Filter>Source\Game\Base\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Base\CameraObject.h">
+      <Filter>Source\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\MainMenu.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\SplashScreen.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\PlayGameButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Box2D\Box2DJointInfo.h">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\FinalGameScene.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommonHeader.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPlayer.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPlayerWheel.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGEndLevelSensor.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Enviroment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGHealthPickUp.h">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGPrismaticEnemy.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGRevolutingEnemy.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\ControlsScene.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\PauseScene.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\ControlsButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\MainMenuButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\QuitButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\BackButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGInvincibilityPickUp.h">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGSpeedPickUp.h">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGSpikes.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Enviroment</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\FGInvisibleEnemy.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\GameObjects\FinalProject\Menu\ResetButton.h">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Scenes\FinalProject\EndGame.h">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Libraries\lodepng\lodepng.cpp">
+      <Filter>Source\Libraries\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\GL\GLExtensions.cpp">
+      <Filter>Source\Core\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\MyMatrix.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Math\Vector.cpp">
+      <Filter>Source\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utility\Helpers.cpp">
+      <Filter>Source\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utility\ShaderProgram.cpp">
+      <Filter>Source\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\WinMain.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2BroadPhase.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollideCircle.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollideEdge.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2CollidePolygon.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Collision.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2Distance.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2DynamicTree.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.cpp">
+      <Filter>Source\Libraries\Box2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.cpp">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.cpp">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.cpp">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.cpp">
+      <Filter>Source\Libraries\Box2D\Collision\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2BlockAllocator.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Draw.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Math.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Settings.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2StackAllocator.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Common\b2Timer.cpp">
+      <Filter>Source\Libraries\Box2D\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Body.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Fixture.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2Island.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2World.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Rope\b2Rope.cpp">
+      <Filter>Source\Libraries\Box2D\Rope</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MotorJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.cpp">
+      <Filter>Source\Libraries\Box2D\Dynamics\Joints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Libraries\cJSON\cJSON.cpp">
+      <Filter>Source\Libraries\cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\Mesh.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Game.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Scene.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\GameObject.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\Box2DWorld.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\Box2DDebugDraw.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\Box2DContactListener.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\MeshShapes.cpp">
+      <Filter>Source\Game\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Box2D\Box2DRaycast.cpp">
+      <Filter>Source\Game\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Cannon.cpp">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\CannonProjectile.cpp">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\HealthPowerUp.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\LivingObject.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PrismaticEnemy.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\Projectile.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\RevolutingEnemy.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\EndLevelSensor.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\ElevatorObject.cpp">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\EnemyObject.cpp">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PlaneRipplesObject.cpp">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Mesh\NumberFontSystem.cpp">
+      <Filter>Source\Game\GameObjects\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FloatingMineObject.cpp">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FloatingObject.cpp">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FloatingPlayerObject.cpp">
+      <Filter>Source\Game\GameObjects\WaterScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\PlayerObject.cpp">
+      <Filter>Source\Game\GameObjects\ThrusterGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\MovingWall.cpp">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\ScoreSensor.cpp">
+      <Filter>Source\Game\GameObjects\CannonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Sound\Sound.cpp">
+      <Filter>Source\Core\Sound\FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Sound\SoundSystem.cpp">
+      <Filter>Source\Core\Sound\FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Sound\AudioCue.cpp">
+      <Filter>Source\Core\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\CannonScene.cpp">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\LightScene.cpp">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\LoadingSampleScene.cpp">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\ThrustersGame.cpp">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\WaterScene.cpp">
+      <Filter>Source\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\SceneManager.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Particles\Particle.cpp">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Particles\ParticleEmitter.cpp">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Particles\ParticleRenderer.cpp">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Particles\ParticleSystem.cpp">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Particles\ParticleRenderer3D.cpp">
+      <Filter>Source\Game\Base\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utility\QuickWatch.cpp">
+      <Filter>Source\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\LightObject.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Utility\FBODefinition.cpp">
+      <Filter>Source\Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\Menu\Button.cpp">
+      <Filter>Source\Game\Base\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Base\CameraObject.cpp">
+      <Filter>Source\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\MainMenu.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\SplashScreen.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\PlayGameButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\FinalGameScene.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPlayer.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPlayerWheel.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGEndLevelSensor.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Enviroment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGHealthPickUp.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGPrismaticEnemy.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGRevolutingEnemy.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\ControlsScene.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\PauseScene.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\ControlsButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\MainMenuButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\QuitButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\BackButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGInvincibilityPickUp.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGSpeedPickUp.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\PickUps</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGSpikes.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Enviroment</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\FGInvisibleEnemy.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\GameObjects\FinalProject\Menu\ResetButton.cpp">
+      <Filter>Source\Game\GameObjects\FinalGame\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Scenes\FinalProject\EndGame.cpp">
+      <Filter>Source\Game\Scenes\FinalGame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\Light.frag">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\Light.vert">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\Water.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\WaterRipples.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\WaterRipples.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\SinTextureColor.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\SinTextureColor.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\MovingWater.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\MovingWater.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\Texture.vert">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\Texture.frag">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\TextureColor.frag">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\TextureColor.vert">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\Color.frag">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\Color.vert">
+      <Filter>Data\Shaders\Basics</Filter>
+    </None>
+    <None Include="Data\Shaders\SkyBox.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\SkyBox.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureBlackAndWhite.frag">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureBlackAndWhite.vert">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureNegative.frag">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureNegative.vert">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureSepia.frag">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureSepia.vert">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\LightSkyBoxReflective.frag">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\LightSkyBoxReflective.vert">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\PureSkyBoxReflective.frag">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\PureSkyBoxReflective.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\LightColor.frag">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\LightColor.vert">
+      <Filter>Data\Shaders\Light</Filter>
+    </None>
+    <None Include="Data\Shaders\Water.vert">
+      <Filter>Data\Shaders\Misc</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureHorizontalBlur.frag">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureHorizontalBlur.vert">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureVignette.frag">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffectTextureVignette.vert">
+      <Filter>Data\Shaders\PostEffect</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\Libraries\SDL2_mixer-2.0.1\lib\x86\SDL2_mixer.lib">
+      <Filter>Source\Libraries</Filter>
+    </Library>
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2.lib">
+      <Filter>Source\Libraries</Filter>
+    </Library>
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2main.lib">
+      <Filter>Source\Libraries</Filter>
+    </Library>
+    <Library Include="Source\Libraries\SDL2-2.0.4\lib\x86\SDL2test.lib">
+      <Filter>Source\Libraries</Filter>
+    </Library>
+    <Library Include="Source\Libraries\fmod\lib\windows\fmodex_vc.lib">
+      <Filter>Source\Libraries\fmod</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

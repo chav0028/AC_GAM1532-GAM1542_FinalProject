@@ -1,0 +1,159 @@
+{
+	"GameObjects":	[{
+			"Name":	"Player",
+			"Pos":	[-0.107660, 8.849899, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Player"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	100,
+					"MotorMaxTorque":	200,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"FrontWheel"
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	100,
+					"MotorMaxTorque":	200,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"BackWheel"
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/cube.obj.mymesh",
+					"OBJFilename":	"cube.obj",
+					"Texture":	"Data/Textures/White.png",
+					"Shader":	"Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"FrontWheel",
+			"Pos":	[1.168368, 8.578364, -0.067630],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["PlayerWheel"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/sphere.obj.mymesh",
+					"OBJFilename":	"sphere.obj",
+					"Texture":	"Data/Textures/White.png",
+					"Shader":	"Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"BackWheel",
+			"Pos":	[-1.468480, 8.578364, -0.067630],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["PlayerWheel"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/sphere.obj.mymesh",
+					"OBJFilename":	"sphere.obj",
+					"Texture":	"Data/Textures/White.png",
+					"Shader":	"Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"GameCamera",
+			"Pos":	[0, 3, -20],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-Main"]
+		}, {
+			"Name":	"Hud Camera",
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-HUD"]
+		}, {
+			"Name":	"Floor",
+			"Pos":	[0.896767, -0.291125, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/cube.obj.mymesh",
+					"OBJFilename":	"cube.obj",
+					"Texture":	"Data/Textures/White.png",
+					"Shader":	"Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Floor2",
+			"Pos":	[-1.183922, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	[],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/cube.obj.mymesh",
+					"OBJFilename":	"cube.obj",
+					"Texture":	"Data/Textures/White.png",
+					"Shader":	"Texture",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}]
+}

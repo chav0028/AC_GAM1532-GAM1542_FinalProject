@@ -1,0 +1,1568 @@
+{
+	"GameObjects":	[{
+			"Name":	"Player",
+			"Pos":	[-0.107660, 2.664905, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Player"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	2,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[1, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"FrontWheel"
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[-1, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	0,
+					"MotorSpeed":	0,
+					"MotorMaxTorque":	0,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0,
+					"OtherGameObject":	"BackWheel"
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Player.obj.mymesh",
+					"OBJFilename":	"Player.obj",
+					"Texture":	"Data/Textures/FGBike.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"FrontWheel",
+			"Pos":	[1.168368, 2.599687, -0.067630],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["PlayerWheel"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.100000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/PlayerWheel.obj.mymesh",
+					"OBJFilename":	"PlayerWheel.obj",
+					"Texture":	"Data/Textures/FGTires.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"BackWheel",
+			"Pos":	[-1.468480, 2.429853, -0.067630],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["PlayerWheel"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.100000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/PlayerWheel.obj.mymesh",
+					"OBJFilename":	"PlayerWheel.obj",
+					"Texture":	"Data/Textures/FGTires.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"GameCamera",
+			"Pos":	[0, 3, -30],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-Main"]
+		}, {
+			"Name":	"HUDCamera",
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["Camera-HUD"]
+		}, {
+			"Name":	"Floor",
+			"Pos":	[580, -15, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[-607, 6, -538.053223, 4.371525, -516.214783, 11.064358, -503.550903, 6.591140, -495.781677, 8.275661, -471.932922, 7.222822, -445.360901, 7.462982, -426.724121, 3.835390, -402.947510, 3.228859, -373.889648, 9.280899, -359.019745, 5.030512, -265, 5, -230, 42, -198.547058, 27.532606, -117.330414, 28.765759, -105, 9, -85, 4, -60.505859, 8.595724, -40.463196, 21.811058, -21.321777, 32.368843, -10, 5, 143.990906, 5.176613, 168, 21, 181.260803, 3.824759, 220.583435, 6.307575, 248, 21, 268, 17, 279.195557, 5.473955, 354.736694, 5.817885, 375.330383, 12.460697, 420, 20, 441, 4, 485, 6, 504.220459, 13.585199, 529, 20, 537, 7, 555, 4, 604, 5]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Floor.obj.mymesh",
+					"OBJFilename":	"Floor.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[86, 86, 86, 255]
+				}]
+		}, {
+			"Name":	"Roof",
+			"Pos":	[580, 40, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[-605.436096, -0.460838, -462.605225, 0.063778, -448.558044, -3.793510, -436.930664, -8.090622, -419.199585, -6.917133, -409.670471, -0.334045, -348, 0, -339.613708, -26.271511, -250, 0, -193, 0, -169.460388, -11.272642, -153.750641, 0.084679, -119.100677, -0.283150, -110, -23, -60, -23, -46, 0, 181, 0, 219, -16, 230, 0, 283, 0, 326.636230, -18.052900, 335.675842, -0.842163, 426, 1, 468, -17, 481, 2, 602, 1]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/Roof.obj.mymesh",
+					"OBJFilename":	"Roof.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[86, 86, 86, 255]
+				}]
+		}, {
+			"Name":	"LeftLevelWall",
+			"Pos":	[-23, 17, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 80, 0],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}]
+		}, {
+			"Name":	"Ramp",
+			"Pos":	[24.028868, -9.589640, 1.516103],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ramp2",
+			"Pos":	[24, -9.589640, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot",
+			"Pos":	[96, -5, 0],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm",
+			"Pos":	[40.558525, 26.219952, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.200000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes",
+			"Pos":	[135.060959, -5.110161, 1.136893],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"EndLevel",
+			"Pos":	[1174, 3, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[40, 80, 60],
+			"Flags":	["Target"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}]
+		}, {
+			"Name":	"Spikes2",
+			"Pos":	[158.814240, -9.922126, -2.230198],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes3",
+			"Pos":	[174.094391, -10.325227, 0.024348],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes4",
+			"Pos":	[185.784393, -7.970584, 1.850194],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes5",
+			"Pos":	[216.601410, -6.859888, -3.331312],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes6",
+			"Pos":	[216.601410, 38.406429, -2.323782],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes7",
+			"Pos":	[174.763306, 34.937496, -1.839930],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes8",
+			"Pos":	[105.265732, 38.873775, 3.051576],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm2",
+			"Pos":	[178.389481, 21.762701, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot2",
+			"Pos":	[262.450073, -8.577087, -2.206802],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"HealthPickUp",
+			"Pos":	[150.350525, 28.309246, -0.825188],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 0.150000, 0.150000],
+			"Flags":	["PickUpHealth"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGHealthPickUp.obj.mymesh",
+					"OBJFilename":	"FGHealthPickUp.obj",
+					"Texture":	"Data/Textures/FGHealthPickUp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"HealthPickUp2",
+			"Pos":	[313.025421, 30.126247, 2.848804],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 0.150000, 0.150000],
+			"Flags":	["PickUpHealth"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGHealthPickUp.obj.mymesh",
+					"OBJFilename":	"FGHealthPickUp.obj",
+					"Texture":	"Data/Textures/FGHealthPickUp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"HealthPickUp3",
+			"Pos":	[456.946411, 35.051422, -0.948891],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.150000, 0.150000, 0.150000],
+			"Flags":	["PickUpHealth"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGHealthPickUp.obj.mymesh",
+					"OBJFilename":	"FGHealthPickUp.obj",
+					"Texture":	"Data/Textures/FGHealthPickUp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvincibilityPickUp",
+			"Pos":	[533.182434, 34.907063, 0.374406],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["InvincibilityPickUp"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGInvincibilityPickUp.obj.mymesh",
+					"OBJFilename":	"FGInvincibilityPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[128, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvincibilityPickUp2",
+			"Pos":	[790.576050, -0.505539, 2.328324],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["InvincibilityPickUp"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGInvincibilityPickUp.obj.mymesh",
+					"OBJFilename":	"FGInvincibilityPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[128, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"SpeedPickUp",
+			"Pos":	[690.524170, 36.522606, 2.328324],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["PickUpSpeed"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpeedPickUp.obj.mymesh",
+					"OBJFilename":	"FGSpeedPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[244, 253, 70, 255]
+				}]
+		}, {
+			"Name":	"SpeedPickUp2",
+			"Pos":	[981.542786, 3.342072, -0.895657],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["PickUpSpeed"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpeedPickUp.obj.mymesh",
+					"OBJFilename":	"FGSpeedPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[244, 253, 70, 255]
+				}]
+		}, {
+			"Name":	"SpeedPickUp3",
+			"Pos":	[494.472839, -9.120302, 0.064481],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["PickUpSpeed"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpeedPickUp.obj.mymesh",
+					"OBJFilename":	"FGSpeedPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[244, 253, 70, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm3",
+			"Pos":	[595.549805, 21.762701, 3.773545],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm4",
+			"Pos":	[595.549805, 21.762701, -1.494226],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ramp3",
+			"Pos":	[599.228149, -8.990773, 1.516103],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes9",
+			"Pos":	[602.149597, -8.445378, -1.979270],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes10",
+			"Pos":	[602.149597, -8.445377, 2.816516],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes11",
+			"Pos":	[611.681580, 38.882526, -1.980000],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes12",
+			"Pos":	[611.681580, 38.529903, 2.599782],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes13",
+			"Pos":	[638.254028, 38.693176, -0.980000],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes14",
+			"Pos":	[638.254028, 38.595409, 1.600000],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm5",
+			"Pos":	[620.915710, 10.495835, -1.494226],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm6",
+			"Pos":	[658.180298, 24.195934, 3.485053],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200001],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm7",
+			"Pos":	[641.753906, -0.801761, 3.485053],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm8",
+			"Pos":	[641.753906, -0.551467, -2.406079],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ramp4",
+			"Pos":	[630.468079, -8.990773, -1.990179],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes15",
+			"Pos":	[627.731018, -8.445378, 0.354383],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes16",
+			"Pos":	[627.731018, -8.445378, 2.890376],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot3",
+			"Pos":	[663.672485, -8.641924, 0.355020],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot4",
+			"Pos":	[663.713257, -8.560564, 2.799323],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot5",
+			"Pos":	[663.814148, -8.560564, -2.364126],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes17",
+			"Pos":	[216.601410, 38.406429, 0.038675],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot6",
+			"Pos":	[835.624207, 6.883936, -2.206802],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot7",
+			"Pos":	[887.176453, -8.492575, 2.568457],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot8",
+			"Pos":	[887.176453, -8.492575, -2.145245],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvinsibleRobot9",
+			"Pos":	[897.919495, -8.492575, 1.688722],
+			"Rot":	[0, 270, 0],
+			"Scale":	[0.010000, 0.010000, 0.010000],
+			"Flags":	["InvisibleEnemy"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	0,
+					"Density":	100,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/EnormousRobot.obj.mymesh",
+					"OBJFilename":	"EnormousRobot.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"LightSkyBoxReflective",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"SpeedPickUp4",
+			"Pos":	[598.700500, -8.853227, 0.796941],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["PickUpSpeed"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpeedPickUp.obj.mymesh",
+					"OBJFilename":	"FGSpeedPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[244, 253, 70, 255]
+				}]
+		}, {
+			"Name":	"Spikes18",
+			"Pos":	[273.986359, -7.796676, 2.804952],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Spikes19",
+			"Pos":	[273.986359, -7.796676, 0.189155],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 2, 2],
+			"Flags":	["Spikes"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Circle",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGSpikes.obj.mymesh",
+					"OBJFilename":	"FGSpikes.obj",
+					"Texture":	"Data/Textures/FGSpikes.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ramp5",
+			"Pos":	[268.045837, -9.575493, 3.870441],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"Ramp6",
+			"Pos":	[267.808929, -9.464366, 2.276007],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Flags":	["EnviromentStatic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Chain",
+					"Static":	1,
+					"Density":	0,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0,
+					"Vertices":	[2.316269, -1.040979, 2.318439, 0.626959, -2.214406, -1.028875, 2.260226, -1.040829]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGRamp.obj.mymesh",
+					"OBJFilename":	"FGRamp.obj",
+					"Texture":	"Data/Textures/FGRamp.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"InvincibilityPickUp3",
+			"Pos":	[271.072479, -8.674429, 2.525865],
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 3, 3],
+			"Flags":	["InvincibilityPickUp"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	1,
+					"Density":	1,
+					"IsSensor":	1,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/FGInvincibilityPickUp.obj.mymesh",
+					"OBJFilename":	"FGInvincibilityPickUp.obj",
+					"Texture":	"Data/Textures/FGStreet.png",
+					"Shader":	"LightColor",
+					"Color":	[128, 255, 255, 255]
+				}]
+		}, {
+			"Name":	"RevolutingArm9",
+			"Pos":	[620.915710, 10.495835, 2.349705],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.200000, 0.200000, 0.200000],
+			"Flags":	["EnviromentDynamic"],
+			"Components":	[{
+					"Type":	"2D Collision Object",
+					"PrimitiveType":	"Box",
+					"Static":	0,
+					"Density":	0.500000,
+					"IsSensor":	0,
+					"Friction":	0.200000,
+					"Restitution":	0
+				}, {
+					"Type":	"2D Joint - Revolute",
+					"AnchorA":	[0, 0],
+					"AnchorB":	[0, 0],
+					"MotorEnabled":	1,
+					"MotorSpeed":	50,
+					"MotorMaxTorque":	50,
+					"LimitEnabled":	0,
+					"LimitMin":	0,
+					"LimitMax":	0,
+					"BreakForce":	0
+				}, {
+					"Type":	"Mesh-OBJ",
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/RevolutingArm.obj.mymesh",
+					"OBJFilename":	"RevolutingArm.obj",
+					"Texture":	"Data/Textures/Blocks.png",
+					"Shader":	"Light",
+					"Color":	[255, 255, 255, 255]
+				}]
+		}]
+}
